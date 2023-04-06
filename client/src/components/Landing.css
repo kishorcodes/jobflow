@@ -1,0 +1,21 @@
+.subscribe-group {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 992px) {
+  .subscribe-group {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+  }
+}
+
+.join-text {
+  font-weight: bold;
+  font-family: "Happy Monkey";
+}
