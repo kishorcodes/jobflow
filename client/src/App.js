@@ -1,19 +1,18 @@
-import logo from "./logoo.svg";
 import "./App.css";
-import NavBar from "./components/Navbar";
-import Landing from "./components/Landing";
-import Search from "./components/Search";
-import NewJobs from "./components/NewJobs";
-import TabsExample from "./components/Filter";
+import SearchResults from "./pages/SearchResults";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import PostJob from "./pages/PostJob";
 function App() {
   return (
-    <div className="App">
-      <NavBar></NavBar>
-      <Landing> </Landing>
-      {/* <Search></Search> */}
-      <TabsExample></TabsExample>
-      <NewJobs></NewJobs>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />}></Route>
+        <Route exact path="/blog" element={<SearchResults />}></Route>
+        <Route exact path="/postjob" element={<PostJob />}></Route>
+
+      </Routes>
+    </Router>
   );
 }
 

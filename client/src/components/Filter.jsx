@@ -1,39 +1,80 @@
-import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Row from "react-bootstrap/esm/Row";
-import Col from "react-bootstrap/esm/Col";
+import Dropdown from "react-bootstrap/Dropdown";
+import { useState } from "react";
 function TabsExample() {
+  const [employment, setEmployment] = useState("Employment");
   return (
     <div
       style={{
         display: "flex",
         justifyContent: "center",
-        marginTop:20
+        marginTop: 20,
+        flexWrap: "wrap",
+        alignItems: "center",
       }}
     >
-      <Row>
-        <Col>
-          {" "}
-          <Nav
-           
-          >
-            <Nav.Link href="#features">Employment</Nav.Link>
-            <Nav.Link href="#pricing">Source</Nav.Link>
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Col>
-      </Row>
+      <Dropdown
+        onSelect={(eventKey, e) => {
+          const selectedItem = e.target.textContent;
+          if (selectedItem === "Remove Filter") setEmployment("Employment");
+          else setEmployment(selectedItem);
+        }}
+        className="d-inline mx-2"
+      >
+        <Dropdown.Toggle variant="light" id="dropdown-autoclose-true">
+          {employment}
+        </Dropdown.Toggle>
 
+        <Dropdown.Menu>
+          <Dropdown.Item>Full time</Dropdown.Item>
+          <Dropdown.Item>Part time / Contract</Dropdown.Item>
+          <Dropdown.Divider />
+          <Dropdown.Item>Remove Filter</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+      <Dropdown className="d-inline mx-2">
+        <Dropdown.Toggle variant="light" id="dropdown-autoclose-true">
+          Default Dropdown
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+      <Dropdown className="d-inline mx-2">
+        <Dropdown.Toggle variant="light" id="dropdown-autoclose-true">
+          Default Dropdown
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+      <Dropdown className="d-inline mx-2 my-2 my-lg-0">
+        <Dropdown.Toggle variant="light" id="dropdown-autoclose-true">
+          Default Dropdown
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+      <Dropdown className="d-inline mx-2 my-2 my-lg-0">
+        <Dropdown.Toggle variant="light" id="dropdown-autoclose-true">
+          Default Dropdown
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
     </div>
   );
 }

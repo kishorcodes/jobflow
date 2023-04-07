@@ -6,7 +6,6 @@ import NewJobsCard from "./NewJobsCard";
 const NewJobs = () => {
   return (
     <Container className="mt-3">
-     
       <Row xs={2} lg={4} className="justify-content-center">
         <Col>
           <NewJobsCard></NewJobsCard>

@@ -7,10 +7,9 @@ body {
 .btn-round {
   border-radius: 12px !important ;
 }
-.App {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
+
+.text-yellow {
+  color: #ffff00;
 }
 .btn-ldark {
   border: none !important;
@@ -21,10 +20,6 @@ body {
   background-color: transparent !important;
 }
 
-.job-bg {
-  background-image: url("./assets/images/job.jpg") !important;
-}
-
-.srch {
+.searchbar-overlay {
   margin-top: -20px !important;
 }
