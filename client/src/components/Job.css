@@ -1,0 +1,27 @@
+.job-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-left-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.job-company-name {
+  color: #fc4747;
+}
+.job-header p {
+  margin: 0;
+}
+
+.job-wrapper {
+    border-bottom: 1px solid grey;
+  padding: 20px 0px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+  max-width: 900px;
+}

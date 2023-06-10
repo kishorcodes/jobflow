@@ -1,12 +1,11 @@
 import NavBar from "../components/Navbar";
-const PostJob = () => {
+const Login = () => {
   return (
     <>
       <NavBar></NavBar>
-
-      <h1>Post Job</h1>
+      <h1>Login</h1>
     </>
   );
 };
 
-export default PostJob;
+export default Login;

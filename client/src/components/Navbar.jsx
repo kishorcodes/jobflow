@@ -1,18 +1,14 @@
-import Button from "react-bootstrap/Button";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
-import logo from "../logo.svg";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-function NavBar() {
+import logo from "../logo.svg";
+const NavBar = () => {
   const navigate = useNavigate();
   return (
     <Navbar
       collapseOnSelect
       expand="lg"
-      bg="dark"
-      variant="dark"
-      className="py-2"
+      variant="light"
+      className="py-2 light-2"
     >
       <Container fluid className="px-3 px-md-5">
         <Navbar.Brand href="/">
@@ -33,12 +29,6 @@ function NavBar() {
             <Nav.Link eventKey={2} href="/blog">
               Blog
             </Nav.Link>
-            {/* <Nav.Link eventKey={3} href="/restapi">
-              Rest API
-            </Nav.Link> */}
-            {/* <Nav.Link eventKey={4} href="/developers">
-              Developers
-            </Nav.Link> */}
             <Nav.Item>
               <Button
                 variant="secondary"
@@ -52,7 +42,7 @@ function NavBar() {
             </Nav.Item>
             <Nav.Item>
               <Button
-                variant="primary mx-lg-1 my-1 my-lg-0"
+                variant="primary mx-lg-2 my-1 my-lg-0"
                 className=" btn-round"
               >
                 Subscribe
@@ -68,6 +58,6 @@ function NavBar() {
       </Container>
     </Navbar>
   );
-}
+};
 
 export default NavBar;

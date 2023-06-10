@@ -1,14 +1,14 @@
-import NewJobs from "../components/NewJobs";
-import TabsExample from "../components/Filter";
-import NavBar from "../components/Navbar";
+import FilterJobs from "../components/FilterJobs";
 import Landing from "../components/Landing";
+import NavBar from "../components/Navbar";
+import NewJobs from "../components/NewJobs";
 
 const Home = () => {
   return (
     <div className="App">
       <NavBar></NavBar>
       <Landing> </Landing>
-      <TabsExample></TabsExample>
+      <FilterJobs></FilterJobs>
       <NewJobs></NewJobs>
     </div>
   );

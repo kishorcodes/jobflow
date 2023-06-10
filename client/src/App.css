@@ -8,14 +8,25 @@ body {
   border-radius: 12px !important ;
 }
 
-.text-yellow {
-  color: #ffff00;
+.text-black2 {
+  color: #212529;
+}
+.light-2{
+  background-color: #f7f7f7;
+}
+.text-darkgrey{
+  color:#52575C;
 }
 .btn-ldark {
   border: none !important;
   background-color: #333 !important;
 }
-
+.bg-paleblue {
+  background-color: #e5f2ff !important;
+}
+.no-border {
+  border: none !important;
+}
 .btn-ldark:hover {
   background-color: transparent !important;
 }

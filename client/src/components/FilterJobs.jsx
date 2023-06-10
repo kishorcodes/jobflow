@@ -1,13 +1,13 @@
-import Dropdown from "react-bootstrap/Dropdown";
 import { useState } from "react";
-function TabsExample() {
+import { Dropdown } from "react-bootstrap";
+function FilterJobs() {
   const [employment, setEmployment] = useState("Employment");
   return (
     <div
       style={{
         display: "flex",
         justifyContent: "center",
-        marginTop: 20,
+        marginTop: 30,
         flexWrap: "wrap",
         alignItems: "center",
       }}
@@ -53,7 +53,7 @@ function TabsExample() {
           <Dropdown.Item href="#">Menu Item</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
-      <Dropdown className="d-inline mx-2 my-2 my-lg-0">
+      {/* <Dropdown className="d-inline mx-2 my-2 my-lg-0">
         <Dropdown.Toggle variant="light" id="dropdown-autoclose-true">
           Default Dropdown
         </Dropdown.Toggle>
@@ -63,7 +63,7 @@ function TabsExample() {
           <Dropdown.Item href="#">Menu Item</Dropdown.Item>
           <Dropdown.Item href="#">Menu Item</Dropdown.Item>
         </Dropdown.Menu>
-      </Dropdown>
+      </Dropdown> */}
       <Dropdown className="d-inline mx-2 my-2 my-lg-0">
         <Dropdown.Toggle variant="light" id="dropdown-autoclose-true">
           Default Dropdown
@@ -79,4 +79,4 @@ function TabsExample() {
   );
 }
 
-export default TabsExample;
+export default FilterJobs;

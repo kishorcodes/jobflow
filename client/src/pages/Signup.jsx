@@ -1,12 +1,12 @@
+import React from "react";
 import NavBar from "../components/Navbar";
-const PostJob = () => {
+const Signup = () => {
   return (
     <>
       <NavBar></NavBar>
-
-      <h1>Post Job</h1>
+      <div>Signup</div>
     </>
   );
 };
 
-export default PostJob;
+export default Signup;

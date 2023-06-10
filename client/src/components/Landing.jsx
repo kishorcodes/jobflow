@@ -1,9 +1,6 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import landing from "../assets/images/career.jpg";
-import Image from "react-bootstrap/Image";
+import { Col, Container, Image, Row } from "react-bootstrap";
 import Button from "react-bootstrap/esm/Button";
+import landing from "../assets/images/aa.jpg";
 import "./Landing.css";
 import SearchBar from "./SearchBar";
 function Landing() {
@@ -19,25 +16,25 @@ function Landing() {
       <Container fluid>
         <Row
           style={{
-            background: "#3A7197",
+            background: "#F7F7F7",
             minHeight: "75vh",
             height: "fit-content",
           }}
           className="flex-column flex-lg-row  align-items-center py-5 px-4 px-md-5 "
         >
           <Col>
-            <h2 className="text-yellow">
+            <h2 className="text-black2">
               <b> Effortlessly find remote job opportunities with Jobflow.</b>
             </h2>
 
-            <h5 className="my-3 text-white">
+            <h5 className="my-3 text-darkgrey">
               We have simplified the process of searching and filtering the
               latest remote job listings for you.
             </h5>
 
             <div className="subscribe-group">
-              <Button variant="info">Subscribe</Button>
-              <span className="join-text">Join our 10000 + Subscribers</span>
+              <Button variant="primary">Subscribe</Button>
+              <span className="join-text">Join our 10000 + Subscribers!</span>
             </div>
           </Col>
           <Col>
@@ -45,7 +42,7 @@ function Landing() {
           </Col>
         </Row>
       </Container>
-      <SearchBar overlay={true}></SearchBar>
+      <SearchBar overlay={true} width={'75'}></SearchBar>
     </div>
   );
 }

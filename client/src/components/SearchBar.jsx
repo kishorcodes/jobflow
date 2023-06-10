@@ -2,15 +2,13 @@ import React from "react";
 
 import { Button, Form, InputGroup } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
-const SearchBar = ({overlay}) => {
+const SearchBar = ({ overlay, width }) => {
   let className = "searchbar";
   console.log(overlay);
   if (overlay) className += " searchbar-overlay";
 
-  
-
   return (
-    <InputGroup className="w-75">
+    <InputGroup className={"w-" + width}>
       <Button className={className} variant="secondary" id="button-addon1">
         <FaSearch></FaSearch>
       </Button>

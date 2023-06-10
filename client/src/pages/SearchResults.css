@@ -1,0 +1,6 @@
+.search-results-jobs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
