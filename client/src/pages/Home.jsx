@@ -5,7 +5,7 @@ import NewJobs from "../components/NewJobs";
 
 const Home = () => {
   return (
-    <div className="App">
+    <div>
       <NavBar></NavBar>
       <Landing> </Landing>
       <FilterJobs></FilterJobs>

@@ -16,12 +16,16 @@
 }
 
 .job-wrapper {
-    border-bottom: 1px solid grey;
+  cursor: pointer;
+  border-bottom: 1px solid grey;
   padding: 20px 0px;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  /* background-color: red; */
   max-width: 900px;
+}
+
+.job-company-logo{
+  height: 65px;
 }

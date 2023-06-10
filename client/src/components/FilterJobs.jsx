@@ -1,16 +1,11 @@
 import { useState } from "react";
 import { Dropdown } from "react-bootstrap";
+import './FilterJobs.css'
 function FilterJobs() {
   const [employment, setEmployment] = useState("Employment");
   return (
     <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        marginTop: 30,
-        flexWrap: "wrap",
-        alignItems: "center",
-      }}
+      className="filter-wrapper"
     >
       <Dropdown
         onSelect={(eventKey, e) => {

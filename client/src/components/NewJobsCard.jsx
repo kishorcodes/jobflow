@@ -1,17 +1,12 @@
-import React from "react";
 import Card from "react-bootstrap/Card";
+import "./NewJobsCard.css";
 const NewJobsCard = ({ image, bgcolor, category, jobcount, days }) => {
-  console.log(image);
+
   return (
     <>
       <Card
         text={"dark"}
-        style={{
-          maxWidth: "16rem",
-          width: "100%",
-          height: "auto",
-        }}
-        className="mb-2 bg-paleblue no-border"
+        className="mb-2 bg-paleblue no-border newjobs-card-wrapper"
       >
         <Card.Body>
           <div

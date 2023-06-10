@@ -1,18 +1,11 @@
 import { Col, Container, Image, Row } from "react-bootstrap";
 import Button from "react-bootstrap/esm/Button";
-import landing from "../assets/images/aa.jpg";
+import landing from "../assets/images/professionals.jpg";
 import "./Landing.css";
 import SearchBar from "./SearchBar";
 function Landing() {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <div className="landing-wrapper">
       <Container fluid>
         <Row
           style={{
@@ -37,12 +30,14 @@ function Landing() {
               <span className="join-text">Join our 10000 + Subscribers!</span>
             </div>
           </Col>
+
           <Col>
             <Image src={landing} alt="career" rounded fluid />
           </Col>
+
         </Row>
       </Container>
-      <SearchBar overlay={true} width={'75'}></SearchBar>
+      <SearchBar overlay={true} width={"75"}></SearchBar>
     </div>
   );
 }

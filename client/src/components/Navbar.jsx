@@ -43,7 +43,7 @@ const NavBar = () => {
             <Nav.Item>
               <Button
                 variant="primary mx-lg-2 my-1 my-lg-0"
-                className=" btn-round"
+                className="btn-round"
               >
                 Subscribe
               </Button>

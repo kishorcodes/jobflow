@@ -1,10 +1,7 @@
-import React from "react";
-import Col from "react-bootstrap/esm/Col";
-import Container from "react-bootstrap/esm/Container";
-import Row from "react-bootstrap/esm/Row";
-import NewJobsCard from "./NewJobsCard";
-import py from "../assets/images/py.svg";
+import { Container, Row, Col } from "react-bootstrap";
 import design from "../assets/images/design.svg";
+import py from "../assets/images/py.svg";
+import NewJobsCard from "./NewJobsCard";
 
 const NewJobs = () => {
   return (
@@ -29,7 +26,7 @@ const NewJobs = () => {
           ></NewJobsCard>
         </Col>
         <Col>
-        <NewJobsCard
+          <NewJobsCard
             image={design}
             bgcolor={"bg-paleblue"}
             category={"Design"}
@@ -38,7 +35,7 @@ const NewJobs = () => {
           ></NewJobsCard>
         </Col>
         <Col>
-        <NewJobsCard
+          <NewJobsCard
             image={design}
             bgcolor={"bg-paleblue"}
             category={"Design"}
@@ -49,7 +46,7 @@ const NewJobs = () => {
       </Row>
       <Row xs={2} lg={4} className="mt-2">
         <Col>
-        <NewJobsCard
+          <NewJobsCard
             image={design}
             bgcolor={"bg-paleblue"}
             category={"Design"}
@@ -58,7 +55,7 @@ const NewJobs = () => {
           ></NewJobsCard>
         </Col>
         <Col>
-        <NewJobsCard
+          <NewJobsCard
             image={design}
             bgcolor={"bg-paleblue"}
             category={"Design"}
@@ -67,16 +64,16 @@ const NewJobs = () => {
           ></NewJobsCard>
         </Col>
         <Col>
-        <NewJobsCard
+          <NewJobsCard
             image={design}
             bgcolor={"bg-paleblue"}
             category={"Design"}
             jobcount={13}
             days={14}
-          ></NewJobsCard> 
+          ></NewJobsCard>
         </Col>
         <Col>
-        <NewJobsCard
+          <NewJobsCard
             image={design}
             bgcolor={"bg-paleblue"}
             category={"Design"}

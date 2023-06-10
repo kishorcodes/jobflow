@@ -1,6 +1,33 @@
+.search-results-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .search-results-jobs {
+  margin-top: 50px;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.job-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.job-controls p {
+  margin: 0;
+}
+
+.pagination-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

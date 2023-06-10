@@ -3,7 +3,6 @@ const PostJob = () => {
   return (
     <>
       <NavBar></NavBar>
-
       <h1>Post Job</h1>
     </>
   );

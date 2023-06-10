@@ -13,9 +13,7 @@ function App() {
         <Route exact path="/blog" element={<SearchResults />}></Route>
         <Route exact path="/postjob" element={<PostJob />}></Route>
         <Route exact path="/login" element={<Login />}></Route>
-
         <Route exact path="/signup" element={<Signup />}></Route>
-
       </Routes>
     </Router>
   );
