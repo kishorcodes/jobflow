@@ -1,6 +1,10 @@
 .newjobs-card-wrapper {
   cursor: pointer;
   max-width: 16rem;
-  width: 100%;
   height: auto;
+}
+
+.newjobs-card-wrapper:hover {
+  transform: scale(1.02);
+  transition: all 100ms ease-in;
 }

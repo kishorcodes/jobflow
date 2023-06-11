@@ -26,7 +26,7 @@ const Job = ({ logo, title, company_name, duration, posted, location }) => {
   return (
     <div className="job-wrapper">
       <div className="job-left-section">
-        <img src={logo} alt="job-company-logo" />
+        <img src={logo} className="job-company-logo" alt="job-company-logo" />
         <div className="job-header">
           <h5 className="job-title">
             {title}, <span className="job-company-name">{company_name}</span>{" "}

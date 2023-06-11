@@ -1,6 +1,6 @@
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import logo from "../logo.svg";
+import logo from "../assets/images/logo.svg";
 const NavBar = () => {
   const navigate = useNavigate();
   return (

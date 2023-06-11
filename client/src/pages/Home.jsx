@@ -8,7 +8,7 @@ const Home = () => {
     <div>
       <NavBar></NavBar>
       <Landing> </Landing>
-      <FilterJobs></FilterJobs>
+      {/* <FilterJobs></FilterJobs> */}
       <NewJobs></NewJobs>
     </div>
   );

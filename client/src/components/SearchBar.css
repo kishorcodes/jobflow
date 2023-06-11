@@ -1,0 +1,12 @@
+.searchbar-form {
+  border: 1px solid #e8e8e8 !important;
+}
+
+.searchbar-form:focus {
+  box-shadow: 3px 0px 3px #e8e8e8 !important;
+} 
+
+.searchbar-icon {
+  background-color: white !important;
+  border: 1px solid #ced4da !important;
+}

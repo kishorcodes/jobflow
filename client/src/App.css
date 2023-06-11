@@ -11,11 +11,17 @@ body {
 .text-black2 {
   color: #212529;
 }
-.light-2{
+.light-2 {
   background-color: #f7f7f7;
 }
-.text-darkgrey{
-  color:#52575C;
+.text-darkgrey {
+  color: #52575c;
+}
+.text-red2{
+  color: #fc4747;
+}
+.text-blue2{
+  color: #046EEF;
 }
 .btn-ldark {
   border: none !important;
@@ -23,6 +29,10 @@ body {
 }
 .bg-paleblue {
   background-color: #e5f2ff !important;
+}
+
+.bg-paleblue-2 {
+  background-color: #dedad2 !important;
 }
 .no-border {
   border: none !important;
