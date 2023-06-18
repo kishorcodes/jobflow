@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap");
 body {
   font-family: "Inter", sans-serif !important;
+  min-height: 100vh;
 }
 
 .btn-round {
@@ -17,11 +18,11 @@ body {
 .text-darkgrey {
   color: #52575c;
 }
-.text-red2{
+.text-red2 {
   color: #fc4747;
 }
-.text-blue2{
-  color: #046EEF;
+.text-blue2 {
+  color: #046eef;
 }
 .btn-ldark {
   border: none !important;

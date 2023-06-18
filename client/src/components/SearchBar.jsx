@@ -1,18 +1,18 @@
 import { useState } from "react";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 import { Button, Form, InputGroup } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
-import './SearchBar.css'
+import "./SearchBar.css";
 const SearchBar = ({ overlay, width }) => {
   let className = "searchbar searchbar-form";
   if (overlay) className += " searchbar-overlay";
   const [input, setInput] = useState("");
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <InputGroup
       onKeyUp={(e) => {
         if (e.key === "Enter") {
-          navigate('/search/' + input)
+          navigate("/search/" + input);
         }
       }}
       onChange={(e) => {
@@ -20,9 +20,7 @@ const SearchBar = ({ overlay, width }) => {
       }}
       className={"w-" + width}
     >
-      <Button
-        className={className + " searchbar-icon"}
-        id="button-addon1">
+      <Button className={className + " searchbar-icon"} id="button-addon1">
         <FaSearch color="#495057  "></FaSearch>
       </Button>
       <Form.Control

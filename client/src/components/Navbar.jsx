@@ -48,8 +48,10 @@ const NavBar = () => {
                 Subscribe
               </Button>
             </Nav.Item>
-            <Nav.Item>
-              <Button variant="primary" className="btn-round">
+            <Nav.Item >
+              <Button  onClick={() => {
+                  navigate("/login");
+                }} variant="primary" className="btn-round">
                 Login
               </Button>
             </Nav.Item>
